@@ -1,0 +1,91 @@
+/**
+ * Import lokalnych czcionek z rodziny 'Nura'
+ * * Zakładana struktura plików:
+ * /
+ * |-- style.css
+ * |-- /fonts
+ * |-- Nura-Thin.woff
+ * |-- Nura-ExtraLight.woff
+ * |-- etc.
+ */
+
+/* Waga: Thin (100) */
+@font-face {
+  font-family: 'Nura';
+  src: url('./Nura-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Waga: ExtraLight (200) */
+@font-face {
+  font-family: 'Nura';
+  src: url('./Nura-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Waga: Light (300) */
+@font-face {
+  font-family: 'Nura';
+  src: url('./Nura-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Waga: Normal (400) - plik Nura-Normal.woff */
+@font-face {
+  font-family: 'Nura';
+  src: url('./Nura-Normal.woff') format('woff');
+  font-weight: 400; /* Słowo kluczowe 'normal' też jest poprawne */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Waga: Medium (500) */
+@font-face {
+  font-family: 'Nura';
+  src: url('./Nura-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Waga: SemiBold (600) */
+@font-face {
+  font-family: 'Nura';
+  src: url('./Nura-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Waga: Bold (700) - plik Nura-Bold.woff */
+@font-face {
+  font-family: 'Nura';
+  src: url('./Nura-Bold.woff') format('woff');
+  font-weight: 700; /* Słowo kluczowe 'bold' też jest poprawne */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Waga: ExtraBold (800) */
+@font-face {
+  font-family: 'Nura';
+  src: url('./Nura-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Waga: Black (900) */
+@font-face {
+  font-family: 'Nura';
+  src: url('./Nura-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

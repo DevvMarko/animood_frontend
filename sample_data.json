@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Attack on Titan (Shingeki no Kyojin)",
+    "genres": ["action", "drama", "fantasy", "post-apocalyptic"],
+    "description": "Gdy jego rodzinne miasto zostaje zniszczone, a matka zabita, młody Eren Jaeger przysięga oczyścić ziemię z gigantycznych, pożerających ludzi tytanów, którzy doprowadzili ludzkość na skraj wyginięcia.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d6/Shingeki_no_Kyojin_manga_volume_1.jpg"
+  },
+  {
+    "title": "Death Note",
+    "genres": ["mystery", "psychological", "supernatural", "thriller"],
+    "description": "Inteligentny licealista prowadzi tajną krucjatę mającą na celu wyeliminowanie przestępców ze świata po znalezieniu notatnika, który może zabić każdego, czyje imię zostanie w nim zapisane.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.jpg"
+  },
+  {
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "genres": ["action", "adventure", "fantasy", "shonen"],
+    "description": "Dwaj bracia poszukują Kamienia Filozoficznego po tym, jak próba wskrzeszenia ich zmarłej matki kończy się niepowodzeniem, pozostawiając ich w uszkodzonych ciałach.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2c/Fullmetal_Alchemist_Brotherhood_key_visual.png"
+  },
+  {
+    "title": "Steins;Gate",
+    "genres": ["sci-fi", "thriller", "psychological"],
+    "description": "Grupa przyjaciół modyfikuje swoją kuchenkę mikrofalową w urządzenie, które może wysyłać wiadomości tekstowe w przeszłość, co prowadzi do nieprzewidzianych i drastycznych konsekwencji.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8c/SteinsGate_BD_vol.1_Cover.jpg"
+  },
+  {
+    "title": "Jujutsu Kaisen",
+    "genres": ["action", "fantasy", "supernatural", "shonen"],
+    "description": "Licealista Yuji Itadori dołącza do tajnej organizacji czarowników Jujutsu, aby wyeliminować potężną klątwę po tym, jak sam staje się jej nosicielem.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Jujutsu_Kaisen_manga_volume_1_cover.png/220px-Jujutsu_Kaisen_manga_volume_1_cover.png"
+  },
+  {
+    "title": "Demon Slayer (Kimetsu no Yaiba)",
+    "genres": ["action", "adventure", "fantasy", "supernatural"],
+    "description": "Młody chłopak staje się zabójcą demonów, aby znaleźć lekarstwo dla swojej siostry, która została zamieniona w demona, po tym jak cała jego rodzina została brutalnie zamordowana.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/0/09/Demon_Slayer_-_Kimetsu_no_Yaiba%2C_volume_1.jpg"
+  },
+  {
+    "title": "One-Punch Man",
+    "genres": ["action", "comedy", "sci-fi", "seinen"],
+    "description": "Historia superbohatera o imieniu Saitama, który jest tak potężny, że potrafi pokonać każdego przeciwnika jednym ciosem. To staje się źródłem jego egzystencjalnego kryzysu i nudy.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c3/One-Punch_Man_manga_cover.png"
+  },
+  {
+    "title": "Cowboy Bebop",
+    "genres": ["action", "adventure", "sci-fi"],
+    "description": "W roku 2071, grupa łowców nagród podróżuje przez Układ Słoneczny na pokładzie statku kosmicznego Bebop, ścigając przestępców i konfrontując się z własną przeszłością.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/4/43/CowboyBebop_vol1.jpg"
+  },
+  {
+    "title": "Your Lie in April (Shigatsu wa Kimi no Uso)",
+    "genres": ["drama", "romance", "slice-of-life"],
+    "description": "Młody pianista-geniusz traci zdolność do słyszenia dźwięków swojego instrumentu po śmierci matki. Jego życie zmienia się, gdy spotyka ekscentryczną i pełną życia skrzypaczkę.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e3/Your_Lie_in_April_manga_volume_1_cover.jpg"
+  },
+  {
+    "title": "Erased (Boku dake ga Inai Machi)",
+    "genres": ["mystery", "thriller", "psychological", "supernatural"],
+    "description": "Młody mężczyzna zostaje cofnięty w czasie o 18 lat, aby zapobiec serii morderstw, które doprowadziły do śmierci jego matki w teraźniejszości.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/58/Boku_dake_ga_Inai_Machi_manga_volume_1_cover.jpg"
+  }
+]

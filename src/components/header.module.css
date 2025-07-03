@@ -1,0 +1,45 @@
+.header {
+  background-color: #263743;
+  margin: 0;
+  padding: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-family: 'Nura', sans-serif;
+  font-weight: 600;
+  color: #E77023;
+  text-decoration: none;
+}
+.logo h1{
+  font-size: 48px;
+  margin: 0;
+}
+
+.addButton{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: #FDD8CE;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+}
+.addButton:hover{
+  color: #E77023;
+}
+.headerLine{
+  display: block;
+  width: 100%;
+  height: 6px;
+background: #E77023;
+background: linear-gradient(90deg,rgba(231, 112, 35, 1) 18%, rgba(38, 55, 67, 1) 91%);
+}
+
+.actionsContainer{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
