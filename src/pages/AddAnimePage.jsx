@@ -41,7 +41,7 @@ function GenreCheckbox({availableGenres, selectedGenres, onChange}){
     ));
 };
 
-const api_url = "http://animoodbackend-production.up.railway.app/api/anime";
+const api_url = "https://animoodbackend-production.up.railway.app/api/anime";
 
 // == Komponent AddAnimePage ===
 function AddAnimePage() {
