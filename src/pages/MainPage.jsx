@@ -3,7 +3,7 @@ import AnimeCard from '../components/AnimeCard';
 import styles from './mainPage.module.css'; // Importujemy style dla głównej strony
 import FilterSidebar from '../components/FilterSidebar'; // Importujemy nowy komponent
 
-const API_BASE_URL = "https://animood-backend-386085181227.europe-central2.run.app/api/anime";
+const API_BASE_URL = "http://animoodbackend-production.up.railway.app/api/anime";
 
 function MainPage() {
   const [animes, setAnimes] = useState([]);

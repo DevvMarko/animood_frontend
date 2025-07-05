@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import styles from './animeDetailsPage.module.css';
 
-const API_BASE_URL = 'https://animood-backend-386085181227.europe-central2.run.app/api/anime';
+const API_BASE_URL = 'http://animoodbackend-production.up.railway.app/api/anime';
 
 function AnimeDetailsPage() {
   const { id } = useParams();
