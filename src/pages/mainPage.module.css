@@ -1,9 +1,10 @@
-.mainPage{
+.mainPage {
   display: flex;
   flex-direction: row;
   padding: 10px;
-  height: calc(100vh - 150px);
   background-color: #263743;
+  flex: 1;
+
 }
 
 .filterContainer{
@@ -30,7 +31,6 @@
   padding: 10px;
   flex: 1;
   min-width: 0;
-  
 }
 
 
