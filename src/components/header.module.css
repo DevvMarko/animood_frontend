@@ -1,12 +1,17 @@
 .header {
   background-color: #263743;
   margin: 0;
-  padding: 33px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header .mainContent{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  padding: 2rem;
 
+}
 .logo{
   font-family: 'Nura', sans-serif;
   font-weight: 600;
@@ -14,7 +19,7 @@
   text-decoration: none;
 }
 .logo h1{
-  font-size: 48px;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -23,7 +28,7 @@
   font-weight: normal;
   color: #FDD8CE;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   transition: color 0.2s ease-in-out;
 }
@@ -33,13 +38,7 @@
 .headerLine{
   display: block;
   width: 100%;
-  height: 6px;
+  height: 0.4rem;
 background: #E77023;
 background: linear-gradient(90deg,rgba(231, 112, 35, 1) 18%, rgba(38, 55, 67, 1) 91%);
-}
-
-.actionsContainer{
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
