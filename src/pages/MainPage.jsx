@@ -5,10 +5,12 @@ import FilterSidebar from '../components/FilterSidebar'; // Importujemy nowy kom
 
 const API_BASE_URL = "https://animoodbackend-production.up.railway.app/api/anime";
 
-function MainPage() {
+function MainPage({headerHeightRef}) {
   const [animes, setAnimes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const mainPageRef = React.useRef(null);
+
 
   // Funkcja do pobierania danych o anime z API
   const fetchAnimes = async (url = API_BASE_URL) => { 
@@ -93,6 +95,28 @@ function MainPage() {
     fetchAnimes(filterUrl);
   }
 
+  useEffect(() => {
+    // get height of window elements
+    const windowHeight = window.innerHeight;
+    const headerHeight = headerHeightRef + 3;
+    const mainPageHeight = mainPageRef.current ? mainPageRef.current.offsetHeight : 0;
+    const mainPagePadding = parseFloat(getComputedStyle(mainPageRef.current).paddingTop) + parseFloat(getComputedStyle(mainPageRef.current).paddingBottom);
+
+    // Log the heights for debugging
+    if (mainPageRef.current) {
+      console.log('Main page height:', mainPageHeight);
+      console.log('Main page padding:', mainPagePadding);
+      console.log('Header height:', headerHeight);
+      console.log('Window height:', windowHeight);
+
+    
+      if(windowHeight - headerHeight < mainPageHeight) {
+        console.info('Main page height exceeds window height');
+        mainPageRef.current.style.height = `${windowHeight - headerHeight - mainPagePadding*2}px`;
+      }
+    }
+  });
+
   return (
     <main className={styles.mainPage}>
 
@@ -100,7 +124,7 @@ function MainPage() {
         <FilterSidebar onFilterApply={handleFilterApply} />
       </section>
 
-      <section className={styles.mainPageContainer}>
+      <section className={styles.mainPageContainer} ref={mainPageRef}>
         {renderContent()}
       </section>
     
