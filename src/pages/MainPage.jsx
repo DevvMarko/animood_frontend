@@ -109,22 +109,27 @@ function MainPage({headerHeightRef}) {
       console.log('Header height:', headerHeight);
       console.log('Window height:', windowHeight);
 
+      // while(windowHeight - headerHeight < mainPageHeight) {
+      //   console.info('Main page height exceeds window height');
+      //   mainPageRef.current.style.height = `${windowHeight - headerHeight - mainPagePadding*2}px`;
+      // }
     
-      if(windowHeight - headerHeight < mainPageHeight) {
+      if(mainPageHeight > windowHeight - headerHeight) {
         console.info('Main page height exceeds window height');
         mainPageRef.current.style.height = `${windowHeight - headerHeight - mainPagePadding*2}px`;
       }
     }
   });
 
+
   return (
-    <main className={styles.mainPage}>
+    <main className={styles.mainPage} ref={mainPageRef}>
 
       <section className={styles.filterContainer}>
         <FilterSidebar onFilterApply={handleFilterApply} />
       </section>
 
-      <section className={styles.mainPageContainer} ref={mainPageRef}>
+      <section className={styles.mainPageContainer} >
         {renderContent()}
       </section>
     
