@@ -57,7 +57,7 @@
   color: #FB8282;
 }
 
-@media (max-width: 837px) {
+@media only screen and (max-width: 837px) {
   .mainPage {
     flex-direction: column;
     padding: 5px;
