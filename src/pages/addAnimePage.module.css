@@ -9,6 +9,8 @@
 }
 
 .sectionForm form{
+    display: flex;
+    flex-direction: column;
     background-color: #2C414F;
     width: 554px;
     padding: 28px;
@@ -107,4 +109,36 @@ form textarea{
 .submitSection p.errorMessage{
     display: block;
     color: hsl(140, 67%, 52%);
+}
+
+@media (max-width: 630px){
+    .sectionForm form{
+        width: auto;
+        max-width: 80%;
+        height: auto;
+        max-height: 100%;
+
+        .genreContainer{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@media (max-width: 580px){
+    .sectionForm form{
+        .genreContainer{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (max-width: 468px){
+    .sectionForm form{
+        .genreContainer{
+            height: auto;
+            max-height: 200px;
+            overflow-y: auto;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }
