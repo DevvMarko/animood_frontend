@@ -10,7 +10,8 @@ function MainPage({headerHeightRef}) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const mainPageRef = React.useRef(null);
-
+  const [menuState, setMenuState] = useState(false);
+  const mobileMenuRef = React.useRef(null);
 
   // Funkcja do pobierania danych o anime z API
   const fetchAnimes = async (url = API_BASE_URL) => { 
@@ -108,12 +109,8 @@ function MainPage({headerHeightRef}) {
       console.log('Main page padding:', mainPagePadding);
       console.log('Header height:', headerHeight);
       console.log('Window height:', windowHeight);
-
-      // while(windowHeight - headerHeight < mainPageHeight) {
-      //   console.info('Main page height exceeds window height');
-      //   mainPageRef.current.style.height = `${windowHeight - headerHeight - mainPagePadding*2}px`;
-      // }
-    
+      
+      // change main page height if it exceeds window height
       if(mainPageHeight > windowHeight - headerHeight) {
         console.info('Main page height exceeds window height');
         mainPageRef.current.style.height = `${windowHeight - headerHeight - mainPagePadding*2}px`;
@@ -121,10 +118,17 @@ function MainPage({headerHeightRef}) {
     }
   });
 
-
+  const changeMenuDisplay = () => {
+    setMenuState(!menuState);
+  }
   return (
     <main className={styles.mainPage} ref={mainPageRef}>
-
+    <section className={styles.mobileMenu}>
+        <button onClick={changeMenuDisplay} className={styles.mobileMenuButton}>Dopasuj</button> 
+        <section ref={mobileMenuRef} className={`${styles.mobileFilterSidebar} ${menuState ? styles.active : ''}`}>
+          <FilterSidebar onFilterApply={handleFilterApply} />
+        </section>
+      </section>
       <section className={styles.filterContainer}>
         <FilterSidebar onFilterApply={handleFilterApply} />
       </section>
