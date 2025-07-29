@@ -8,6 +8,7 @@
 }
 
 .animeDetailsMain .animeDetailsContainer {
+  box-sizing: border-box;
   display: grid;
   padding: 1rem;
   width: 60%;
@@ -18,9 +19,13 @@
   grid-template-areas: 
     "image title_and_genres"
     "image descriptionSection";
+  justify-content: center;
+  height: auto;
+  max-height: 100%;
 }
 
 .animeDetailsContainer section{
+  box-sizing: border-box;
   background-color: #324857;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -30,7 +35,7 @@
 /* Image Section */
 .animeDetailsContainer .animeImage{
   grid-area: image;
-  height: 45rem;
+  height: 100%;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -82,3 +87,55 @@
   font-family: 'Montserrat', sans-serif;
   margin: 0.5rem 0;
 }
+
+@media only screen and (max-width: 900px) {
+  .animeDetailsMain{
+    height: auto;
+    min-height: auto;
+  }
+  
+  .animeDetailsMain .animeDetailsContainer {
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title_and_genres"
+      "image"
+      "descriptionSection";
+  }
+
+  .animeDetailsContainer .animeImage {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .animeDetailsContainer .title_and_genres,
+  .animeDetailsContainer .descriptionSection {
+    width: 100%;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .animeDetailsMain {
+    padding: 5px;
+  }
+
+  .animeDetailsMain .animeDetailsContainer {
+    padding: 0.5rem;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .animeDetailsContainer .animeImage {
+    height: 12rem;
+  }
+
+  .title_and_genres .title {
+    font-size: 1.3rem;
+  }
+
+  .descriptionSection .descriptionTitle {
+    font-size: 1.1rem;
+  }
+} */
