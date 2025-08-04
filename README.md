@@ -7,7 +7,7 @@
 
 <h2>🚀 Demo</h2>
 
-[animood-frontend.vercel.app](https://animood-frontend.vercel.app)
+[animod.vercel.app](https://animod.vercel.app)
 
 <h2>Wygląd aplikacji:</h2>
 
