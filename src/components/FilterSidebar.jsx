@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './filterSidebar.module.css';
+import styles from './filterSidebarStyles/filterSidebar.module.css';
 
 const ALL_GENRES = [
   { value: "action", label: "Akcja" },

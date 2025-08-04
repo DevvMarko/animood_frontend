@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './animeCard.module.css';
+import styles from './animeCardStyles/animeCard.module.css';
 import { Link } from 'react-router-dom';
 
 function AnimeCard({anime, onDelete}) {

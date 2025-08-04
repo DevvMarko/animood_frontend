@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./addAnimePage.module.css";
+import styles from "./addAnimePageStyles/addAnimePage.module.css";
 
 
 // Definicja dostępnych gatunków anime

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import styles from './animeDetailsPage.module.css';
+import styles from './animeDetailsPageStyles/animeDetailsPage.module.css';
 
 const API_BASE_URL = 'https://animoodbackend-production.up.railway.app/api/anime';
 

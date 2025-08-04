@@ -1,0 +1,117 @@
+.sidebarContainer {
+  width: calc(100% - 20px * 2);
+  height: calc(100% - 20px * 2);
+  padding: 20px;
+}
+
+.sidebar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* genres section */
+  /* genres section - labels */
+}
+.sidebar h2 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #F0F1F1;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.sidebar hr {
+  width: 100%;
+  border: 1px solid rgba(217, 217, 217, 0.25);
+}
+.sidebar h3 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #F0F1F1;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+.sidebar .searchBar,
+.sidebar select {
+  width: calc(100% - 15px);
+  padding: 5px 5px;
+  background-color: rgba(31, 32, 33, 0);
+  border: 2px solid #D9D9D9;
+  border-radius: 7px;
+  color: #D9D9D9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.sidebar .searchBar::-moz-placeholder {
+  color: #a7a7a7;
+  font-family: "montserrat", sans-serif;
+  font-size: 14px;
+}
+.sidebar .searchBar::placeholder {
+  color: #a7a7a7;
+  font-family: "montserrat", sans-serif;
+  font-size: 14px;
+}
+.sidebar select {
+  width: 100%;
+}
+.sidebar select option {
+  background-color: #D9D9D9;
+  color: #1F2021;
+}
+.sidebar .genresContainer {
+  flex-grow: 1;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(31, 32, 33, 0.5215686275) rgba(255, 166, 0, 0);
+  padding: 10px;
+  background-color: #557c96;
+  border-radius: 7px;
+}
+.sidebar label {
+  font-family: "montserrat", sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #D9D9D9;
+  padding: 5px;
+  width: auto;
+  cursor: pointer;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.sidebar label input {
+  display: none;
+}
+.sidebar label:hover {
+  background-color: #D9D9D9;
+  color: #1F2021;
+}
+.sidebar .selectedLabel {
+  background-color: #FDD8CE;
+  color: #1F2021 !important;
+}
+.sidebar .applyButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #E77023;
+  color: #D9D9D9;
+  border: none;
+  border-radius: 7px;
+  font-family: "montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  margin-top: 20px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.158);
+}/*# sourceMappingURL=filterSidebar.module.css.map */

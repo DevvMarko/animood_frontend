@@ -1,0 +1,71 @@
+$header-bg-color: #263743;
+$logo-color: #E77023;
+$add-button-color: #FDD8CE;
+$header-line-color: #E77023;
+
+.header {
+  background-color: $header-bg-color;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  .mainContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .logo {
+    font-family: 'Nura', sans-serif;
+    font-weight: 600;
+    color: $logo-color;
+    text-decoration: none;
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+  }
+
+  .addButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: $add-button-color;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: $logo-color;
+    }
+  }
+
+  .headerLine {
+    display: block;
+    width: 100%;
+    height: 0.4rem;
+    background: $header-line-color;
+    background: linear-gradient(90deg, rgba(231, 112, 35, 1) 18%, rgba(38, 55, 67, 1) 91%);
+  }
+}
+
+
+@media only screen and (max-width: 565px) {
+  .header {
+
+    .logo {
+      h1 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+    }
+
+    .addButton {
+      font-size: 1.2rem;
+      width: auto;
+      text-align: end;
+    }
+  }
+}

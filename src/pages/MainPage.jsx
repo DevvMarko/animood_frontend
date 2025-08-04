@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AnimeCard from '../components/AnimeCard';
-import styles from './mainPage.module.css'; // Importujemy style dla głównej strony
-import FilterSidebar from '../components/FilterSidebar'; // Importujemy nowy komponent
+import styles from './mainPageStyles/mainPage.module.css';
+import FilterSidebar from '../components/FilterSidebar';
 
 const API_BASE_URL = "https://animoodbackend-production.up.railway.app/api/anime";
 

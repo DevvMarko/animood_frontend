@@ -4,27 +4,24 @@
   display: flex;
   flex-direction: column;
 }
-
-.header .mainContent{
+.header .mainContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-
 }
-.logo{
-  font-family: 'Nura', sans-serif;
+.header .logo {
+  font-family: "Nura", sans-serif;
   font-weight: 600;
   color: #E77023;
   text-decoration: none;
 }
-.logo h1{
+.header .logo h1 {
   font-size: 3rem;
   margin: 0;
 }
-
-.addButton{
-  font-family: 'Montserrat', sans-serif;
+.header .addButton {
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   color: #FDD8CE;
   text-decoration: none;
@@ -32,31 +29,25 @@
   text-transform: uppercase;
   transition: color 0.2s ease-in-out;
 }
-.addButton:hover{
+.header .addButton:hover {
   color: #E77023;
 }
-.headerLine{
+.header .headerLine {
   display: block;
   width: 100%;
   height: 0.4rem;
   background: #E77023;
-  background: linear-gradient(90deg,rgba(231, 112, 35, 1) 18%, rgba(38, 55, 67, 1) 91%);
+  background: linear-gradient(90deg, rgb(231, 112, 35) 18%, rgb(38, 55, 67) 91%);
 }
 
-@media only screen and (max-width: 565px){
-  .mainContent{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .logo h1{
+@media only screen and (max-width: 565px) {
+  .header .logo h1 {
     font-size: 2.5rem;
     margin: 0;
   }
-
-  .addButton{
+  .header .addButton {
     font-size: 1.2rem;
     width: auto;
     text-align: end;
   }
-}
+}/*# sourceMappingURL=header.module.css.map */

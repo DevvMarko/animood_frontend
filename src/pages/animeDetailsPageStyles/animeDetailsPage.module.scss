@@ -1,0 +1,147 @@
+$main-bg-color: #263743;
+$container-bg-color: #324857;
+$title-color: #E77023;
+$genre-bg-color: #456478;
+$white-text: #F0F1F1;
+$light-gray-text: #CFD0D2;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+.animeDetailsMain {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  min-height: calc(100% - 148px);
+  background-color: $main-bg-color;
+
+
+  .loading,
+  .error {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-family: 'inter', sans-serif;
+  }
+
+  .loading {
+    color: $light-gray-text;
+  }
+
+  .error {
+    color: #FB8282;
+  }
+
+
+  .animeDetailsContainer {
+    box-sizing: border-box;
+    display: grid;
+    padding: 1rem;
+    width: 60%;
+    border-radius: 1rem;
+    gap: 1rem;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "image title_and_genres"
+      "image descriptionSection";
+    justify-content: center;
+    height: auto;
+    max-height: 100%;
+
+    // Wspólne style dla sekcji w kontenerze
+    section {
+      box-sizing: border-box;
+      background-color: $container-bg-color;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px $shadow-color;
+    }
+
+    /* Image Section */
+    .animeImage {
+      grid-area: image;
+      height: 100%;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px $shadow-color;
+    }
+
+    /* Title and Genres Section */
+    .title_and_genres {
+      flex-direction: column;
+      height: fit-content;
+      grid-area: title_and_genres;
+
+      .title {
+        font-size: 2rem;
+        color: $title-color;
+        font-family: 'Nura', sans-serif;
+        margin: 0.5rem 0;
+      }
+
+      .genres {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+
+        .genre {
+          font-size: 1rem;
+          font-family: 'Montserrat', sans-serif;
+          padding: 0.5rem;
+          color: $white-text;
+          background-color: $genre-bg-color;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+
+    /* Description Section */
+    .descriptionSection {
+      grid-area: descriptionSection;
+
+      .descriptionTitle {
+        font-size: 1.5rem;
+        color: $white-text;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0.5rem 0;
+      }
+
+      .description {
+        font-size: 1rem;
+        color: $light-gray-text;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .animeDetailsMain {
+    height: auto;
+    min-height: auto;
+
+    .animeDetailsContainer {
+      width: 80%;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto; 
+      grid-template-areas:
+        "title_and_genres"
+        "image"
+        "descriptionSection";
+
+      .animeImage {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .title_and_genres,
+      .descriptionSection {
+        width: 100%;
+      }
+    }
+  }
+}

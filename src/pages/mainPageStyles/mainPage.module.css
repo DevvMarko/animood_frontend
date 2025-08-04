@@ -1,0 +1,117 @@
+.mainPage {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: #263743;
+  flex: 1;
+  height: 100%;
+}
+.mainPage .mobileMenu {
+  display: none;
+}
+
+.filterContainer {
+  width: 30vh;
+  background-color: #456478;
+  border-radius: 20px;
+  margin: 10px;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.mainPageContainer {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: flex-start;
+  height: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #1F2021 rgba(255, 166, 0, 0);
+  position: relative;
+  z-index: 0;
+  padding: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.loading,
+.error,
+.noData {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-family: "inter", sans-serif;
+}
+
+.loading, .noData {
+  color: #CFD0D2;
+}
+
+.error {
+  color: #FB8282;
+}
+
+@media only screen and (max-width: 837px) {
+  .mainPage {
+    flex-direction: column;
+    padding: 5px;
+    height: auto;
+  }
+  .mainPage .mobileMenu {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: 95%;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.2s ease-in-out;
+  }
+  .mainPage .mobileMenu .mobileMenuButton {
+    background: none;
+    border: none;
+    color: #FF7F3F;
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 15px;
+    margin: 5px;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(255, 127, 63, 0) 0%, #FF7F3F 20%, #FF7F3F 80%, rgba(255, 127, 63, 0) 100%), linear-gradient(to top, transparent, transparent);
+    background-size: 100% 2px, 100% 100%;
+    background-position: 0 100%, 0 0;
+    background-repeat: no-repeat;
+  }
+  .mainPage .mobileMenu .mobileFilterSidebar {
+    flex-grow: 1;
+    width: 80%;
+    background-color: #456478;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, margin 0.4s ease-in-out;
+    opacity: 0;
+  }
+  .mainPage .mobileMenu .mobileFilterSidebar.active {
+    max-height: 700px;
+    opacity: 1;
+    margin: 1rem;
+  }
+  .filterContainer {
+    display: none;
+  }
+  .mainPageContainer {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=mainPage.module.css.map */

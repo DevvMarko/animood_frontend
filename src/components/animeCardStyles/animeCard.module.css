@@ -1,4 +1,3 @@
-
 .animeCardContainer {
   width: 213px;
   height: 320px;
@@ -8,20 +7,23 @@
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease, min-height 0.3s ease-in-out;
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 0, 0, 0.5)), url('https://via.placeholder.com/213x320');
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 0, 0, 0.5)), url("https://via.placeholder.com/213x320");
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
-.animeCardContent:hover {
-  position: absolute;
-  transform: scale(1.05);
-  z-index: 9999;
-  transition: height 0.3s ease, box-shadow 0.3s ease;
+.animeCardContainer h2 {
+  z-index: 2;
+  font-family: "inter", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 0 19px;
+  width: calc(100% - 38px);
+  height: auto;
+  text-wrap: wrap;
+  color: #CFD0D2;
 }
 
-.animeCardContent{
+.animeCardContent {
   background-size: cover;
   background-position: center;
   height: 320px;
@@ -32,9 +34,15 @@
   border-radius: 8px;
   z-index: 5;
   transition: height 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-
 }
-.contentExpanded{
+.animeCardContent:hover {
+  position: absolute;
+  transform: scale(1.05);
+  z-index: 9999;
+  transition: height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contentExpanded {
   position: absolute;
   height: calc(320px + 75px);
   z-index: 9999;
@@ -44,25 +52,11 @@
   transform: scale(1.05);
 }
 
-
-.animeCardContainer h2{
-  z-index: 2;
-
-  font-family: 'inter', sans-serif;
-  font-size: 24px;
-  font-weight: normal;
-  padding: 0 19px;
-  width: calc(100% - 38px);
-  height: auto;
-  text-wrap: wrap;
-  color: #CFD0D2;
-}
-
-.cardDetailsOff{
+.cardDetailsOff {
   display: none;
 }
 
-.cardDetailsOn{
+.cardDetailsOn {
   z-index: 1;
   height: auto;
   width: calc(100% - 38px);
@@ -76,14 +70,15 @@
   grid-column-gap: 7px;
   grid-row-gap: 7px;
   color: #1F2021;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 20px;
 }
-.cardDetailsOn button, .cardDetailsOn .buttonLink{
+.cardDetailsOn button,
+.cardDetailsOn .buttonLink {
   border: none;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   text-align: center;
   color: #1F2021;
   text-decoration: none;
@@ -91,22 +86,17 @@
   font-weight: normal;
   padding: 3px;
   border-radius: 4px;
+  cursor: pointer;
 }
-.buttonDetails{
-  grid-area: 1 / 1 / 2 / 3;
-  background-color: #B0C6D6;
-  
-
-  
-}
-.buttonEdit{
-  grid-area: 2 / 1 / 3 / 2;
+.cardDetailsOn .buttonDetails {
+  grid-area: 1/1/2/3;
   background-color: #B0C6D6;
 }
-.buttonDelete{
-  grid-area: 2 / 2 / 3 / 3;
+.cardDetailsOn .buttonEdit {
+  grid-area: 2/1/3/2;
+  background-color: #B0C6D6;
+}
+.cardDetailsOn .buttonDelete {
+  grid-area: 2/2/3/3;
   background-color: #FB8282;
-}
-
-
-
+}/*# sourceMappingURL=animeCard.module.css.map */

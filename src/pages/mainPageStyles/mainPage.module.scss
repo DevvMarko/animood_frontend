@@ -1,26 +1,35 @@
+$main-bg-color: #263743;
+$filter-bg-color: #456478;
+$text-color: #CFD0D2;
+$error-color: #FB8282;
+$orange-accent: #FF7F3F;
+$scrollbar-thumb-color: #1F2021;
+$scrollbar-track-color: rgba(255, 166, 0, 0);
+
+
 .mainPage {
   display: flex;
   flex-direction: row;
   padding: 10px;
-  background-color: #263743;
+  background-color: $main-bg-color;
   flex: 1;
   height: calc(100%);
+
+  .mobileMenu {
+    display: none;
+  }
 }
 
-.filterContainer{
+.filterContainer {
   width: 30vh;
-  background-color: #456478;
+  background-color: $filter-bg-color;
   border-radius: 20px;
   margin: 10px;
   flex-shrink: 0;
   display: flex;
 }
 
-.mobileMenu{
-  display: none;
-}
-
-.mainPageContainer{
+.mainPageContainer {
   overflow: auto;
   display: flex;
   flex-direction: row;
@@ -29,7 +38,7 @@
   align-content: flex-start;
   height: auto;
   scrollbar-width: thin;
-  scrollbar-color: #1F2021 rgba(255, 166, 0, 0);
+  scrollbar-color: $scrollbar-thumb-color $scrollbar-track-color;
   position: relative;
   z-index: 0;
   padding: 10px;
@@ -38,34 +47,25 @@
 }
 
 
-.loading{
+.loading,
+.error,
+.noData {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
   font-size: 1rem;
   font-family: 'inter', sans-serif;
-  color: #CFD0D2;
-}
-.error{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  font-size: 1rem;
-  font-family: 'inter', sans-serif;
-  color: #FB8282;
 }
 
-.noData{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    font-size: 1rem;
-    font-family: 'inter', sans-serif;
-    color: #CFD0D2;
+.loading, .noData {
+  color: $text-color;
 }
+
+.error {
+  color: $error-color;
+}
+
 
 @media only screen and (max-width: 837px) {
   .mainPage {
@@ -73,7 +73,7 @@
     padding: 5px;
     height: auto;
 
-    .mobileMenu{
+    .mobileMenu {
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -84,11 +84,10 @@
       align-items: center;
       transition: height 0.2s ease-in-out;
 
-
       .mobileMenuButton {
         background: none;
         border: none;
-        color: #FF7F3F;
+        color: $orange-accent;
         font-family: 'Montserrat', sans-serif;
         width: 80%;
         font-size: 1.5rem;
@@ -97,25 +96,24 @@
         padding: 8px 15px;
         margin: 5px;
         position: relative;
-        background-image: 
+        background-image:
           linear-gradient(
             to right,
             rgba(255, 127, 63, 0) 0%,
-            #FF7F3F 20%,
-            #FF7F3F 80%,
-            rgba(255, 127, 63, 0) 100% 
+            $orange-accent 20%,
+            $orange-accent 80%,
+            rgba(255, 127, 63, 0) 100%
           ),
           linear-gradient(to top, transparent, transparent);
-
         background-size: 100% 2px, 100% 100%;
         background-position: 0 100%, 0 0;
         background-repeat: no-repeat;
       }
 
-      .mobileFilterSidebar{
+      .mobileFilterSidebar {
         flex-grow: 1;
         width: 80%;
-        background-color: #456478;
+        background-color: $filter-bg-color;
         margin: 1rem;
         border-radius: 20px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -125,11 +123,10 @@
         transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, margin 0.4s ease-in-out;
         opacity: 0;
 
-        &.active{
+        &.active {
           max-height: 700px;
           opacity: 1;
           margin: 1rem;
-
         }
       }
     }
