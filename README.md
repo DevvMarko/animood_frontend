@@ -20,7 +20,7 @@
 
 Tutaj są funkcje, które znajdują sie na stronie:
 
-*   **CRUD** – tworzenie nowych pozycji, wyświetlanie szczegółowych informacji, edycja danych i usuwanie wpisów.
+*   **CRUD** – tworzenie nowych pozycji, wyświetlanie szczegółowych informacji, edycja danych i usuwanie wpisów (Funkcje dodawania, usuwania i edycji w wersji demonstracyjnej zostały zablokowane).
 *   **Wyszukiwanie** – szybkie znajdowanie anime po tytule.
 *   **Sortowanie** – możliwość uporządkowania listy według różnych kryteriów (np. alfabetycznie).
 *   **Filtrowanie** – selekcja anime według gatunków (genre).
